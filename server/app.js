@@ -91,6 +91,12 @@ app.delete("/del/:id",async(req,res)=>{
     }
 })
 
+app.use(express.static(__dirname+"/client/my-app/build"));
+
+app.use("*",(req,res)=>{
+    res.sendFile(__dirname+ "/client/my-app/build/index.html");
+});
+
 app.listen(PORT,(req,res)=>{
     console.log("Ok");
 })

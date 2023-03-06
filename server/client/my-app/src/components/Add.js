@@ -22,7 +22,7 @@ const Add = () => {
 
         const{lname,lshort,ldate,ldesc,llink} = lang;
 
-        const res = await fetch("http://localhost:3900/newlang",{
+        const res = await fetch("/newlang",{
             method: "POST",
             headers:{
                 "Content-Type": "application/json",

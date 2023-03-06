@@ -52,7 +52,7 @@ const Home = () => {
     const[lang,setLang] = useState([]);
 
     const showLang = async()=>{
-        const res = await fetch("http://localhost:3900/alllang");
+        const res = await fetch("/alllang");
 
         const data = await res.json();
 

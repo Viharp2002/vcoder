@@ -5,7 +5,7 @@ function Delete() {
     const deleteLang = async()=>{
         const id = document.getElementById("id").value;
         
-        const res = await fetch(`http://localhost:3900/del/`+id,{
+        const res = await fetch(`/del/`+id,{
             method:"DELETE",
             headers:{
                 Accept:"application/json",

@@ -20,7 +20,7 @@ const Login = (props) => {
         e.preventDefault();
         const{password,email} = user;
 
-        const res = await fetch("http://localhost:3900/loginadmin",{
+        const res = await fetch("/loginadmin",{
             method: "POST",
             headers:{
                 "Content-Type": "application/json"
